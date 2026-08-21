@@ -1,0 +1,32 @@
+[project]
+name = "start-api-fastapi"
+version = "0.1.0"
+description = "FastAPI starter template"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.141.1",
+    "module-typica==0.2.14",
+    "pydantic>=2.13.4",
+    "pydantic-settings>=2.15.0",
+    "uvicorn>=0.52.4",
+]
+
+[dependency-groups]
+dev = [
+    "httpx2>=0.28.1",
+    "pytest>=8.4.2",
+    "ruff>=0.14.0",
+]
+
+# ponytail: app, not a library — no build-system, nothing to install.
+# Add hatchling + [tool.hatch.build.targets.wheel] if this ever ships as a package.
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.ruff.lint]
+extend-select = ["I"]
