@@ -5,7 +5,7 @@ Cookiecutter template for a FastAPI service.
 ## Generate a project
 
 ```bash
-uvx cookiecutter https://git.blackeye.id/utility/start-api-fastapi.git
+uvx cookiecutter gh:oktapiancaw/start-api-fastapi
 # or from a local clone:
 uvx cookiecutter path/to/start-api-fastapi
 ```
