@@ -1,27 +1,11 @@
-# Python-generated files
+# Template-repo cruft (never ships with generated projects)
 __pycache__/
 *.py[oc]
-build/
-dist/
-wheels/
-*.egg-info
-
-# Virtual environments
-.venv
-
-# Secrets
-.env
-.env.*
-!.env.example
-
-# Runtime output
-logs/
-public/cache/*
-public/data/*
-public/input/*
-public/output/*
-!public/*/.gitkeep
-
-# Tooling caches
+.venv/
 .ruff_cache/
 .pytest_cache/
+logs/*.log
+.claude/settings.local.json
+
+# Local scratch (template-root only; cookiecutter ignores it)
+.trash/

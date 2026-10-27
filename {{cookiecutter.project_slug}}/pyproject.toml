@@ -1,9 +1,12 @@
 [project]
-name = "start-api-fastapi"
+name = "{{ cookiecutter.project_slug }}"
 version = "0.1.0"
-description = "FastAPI starter template"
+description = "{{ cookiecutter.package_description }}"
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">={{ cookiecutter.python_version }}"
+authors = [
+    { name = "{{ cookiecutter.author_name }}", email = "{{ cookiecutter.author_email }}" },
+]
 dependencies = [
     "fastapi>=0.141.1",
     "module-typica==0.2.14",
